@@ -63,8 +63,7 @@ function rollButton_clicked():void {
        console.log (die2);
 
     }
-
-
+    
     function main(): void {
         //dice images
         blank = new createjs.Bitmap ("Assets/images/blank.png");
