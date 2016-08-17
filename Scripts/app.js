@@ -1,21 +1,9 @@
-/**
- * FileName: app.js
- * 
- * @author Larissa Zocche
- * @date August 17, 2016
- * 
- * StudentID: 300870340
- * 
- * @description This file is the main javascript file for the web site
- */
-
-
 var core;
 (function (core) {
     "use strict";
     var canvas;
     var stage;
-    
+    var rollButton;
     // app entry function
     function init() {
         canvas = document.getElementById("canvas");
@@ -29,6 +17,11 @@ var core;
         stage.update();
     }
     function main() {
+        //roll button object
+        rollButton = new createjs.Bitmap("Assets/images/rollButton.png");
+        rollButton.x = 330;
+        rollButton.y = 240;
+        stage.addChild(rollButton);
     }
     window.addEventListener("load", init);
 })(core || (core = {}));

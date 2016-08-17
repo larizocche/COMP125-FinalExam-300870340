@@ -3,6 +3,7 @@ module core {
 
     let canvas: HTMLElement;
     let stage: createjs.Stage;
+    let rollButton;
 
 
     // app entry function
@@ -21,7 +22,13 @@ module core {
     }
 
     function main(): void {
-        
+        //roll button object
+       rollButton = new createjs.Bitmap ("Assets/images/rollButton.png");
+      
+       rollButton.x = 330;
+       rollButton.y = 240;
+       stage.addChild(rollButton);
+
     }
 
     window.addEventListener("load", init);
